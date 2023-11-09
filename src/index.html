@@ -1,309 +1,259 @@
 <!doctype html>
 <html lang="en" class="h-full lg:text-lg 2xl:text-2xl">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ЛАБОРАТОРИЯ.РУС</title>
-    <link href="/style.css" rel="stylesheet" />
-    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e22d7c09-ff6c-4417-a684-5bd8ef956fc0" type="text/javascript"></script> -->
-    <!-- <script src="/assets/map.js"></script> -->
-  </head>
-  <body
-    class="min-w-[320px] overflow-x-hidden bg-gradient-to-b from-slate-50 to-gray-400"
-  >
-    <main class="">
-      <!-- #region ARTICLE ABOUT  -->
-      <article
-        class="about py-20 lg:pb-10 flex w-full flex-col lg:flex-row lg:items-start  lg:justify-start px-6 lg:px-16 3xl:pr-44  text-center"
-      >
-        <!-- #region LOGO -->
-        <div id="logo" class="mb-20 lg:mb-0 lg:order-1 flex justify-center">
-          <img
-            class="w-60 lg:w-[30rem]"
-            src="/assets/logo.svg"
-            itemprop="logo"
-          />
-        </div>
-        <!-- #endregion -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ЛАБОРАТОРИЯ.РУС</title>
+        <link href="/style.css" rel="stylesheet" />
 
-        <div class="flex w-full lg:w-auto justify-between lg:justify-end lg:order-3 lg:pt-8">
-          
-          <div class="lg:hidden">
-            <h1 class="text-4xl font-light">Лаборатория</h1>
-            <div class="dotline mt-2 mr-5">
-              <div class="c"></div>
-              <div class="l"></div>
-              <div class="c"></div>
-            </div>
-          </div>
-          
-          <div class="-mr-4">
-            <!-- #region NAV-LINK-FREZER -->
-            <svg
-              class="group w-32 transition-all hover:-translate-x-[0.05rem] hover:-translate-y-[0.05rem]"
-              version="1.1"
-              viewBox="0 0 139 139"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <defs>
-                <path
-                  id="svg-nav-link-base"
-                  d="m60.84 15c3.849-6.667 13.47-6.667 17.32 0l42.87 74.25c3.849 6.667-0.963 15-8.661 15h-85.74c-7.698 0-12.51-8.333-8.66-15z"
-                  class="cursor-pointer"
-                />
-              </defs>
-              <use
-                href="#svg-nav-link-base"
-                class="fill-zinc-800 group-hover:fill-zinc-800/95 group-hover:drop-shadow-[0_6px_4px_rgba(0,0,0,0.8)]"
-              />
-              <rect
-                x="50"
-                y="53"
-                width="38"
-                height="3"
-                rx="1.5"
-                class="cursor-pointer fill-[#F62221] group-hover:fill-red-500"
-              />
-              <text
-                class="w-16 cursor-pointer fill-white font-light tracking-wider 2xl:text-xs"
-                text-anchor="middle"
-              >
-                <tspan x="52%" y="53%">Фрезерный</tspan>
-                <tspan x="52%" dy="14%">центр</tspan>
-              </text>
-            </svg>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+        <link rel="manifest" href="/assets/site.webmanifest" />
+        <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e22d7c09-ff6c-4417-a684-5bd8ef956fc0" type="text/javascript"></script> -->
+        <!-- <script src="/assets/map.js"></script> -->
+    </head>
+    <body class="min-w-[320px] overflow-x-hidden bg-gradient-to-b from-slate-50 to-gray-400">
+        <main class="relative">
+            <!-- #region ARTICLE ABOUT  -->
+            <article class="about flex w-full flex-col px-6 py-20 text-center lg:flex-row lg:items-start lg:justify-start lg:px-16 lg:pb-10 3xl:pr-44">
+                <!-- #region LOGO -->
+                <div id="logo" class="mb-20 flex justify-center lg:order-1 lg:mb-0">
+                    <img class="w-60 lg:w-[30rem]" src="/assets/logo.svg" itemprop="logo" />
+                </div>
+                <!-- #endregion -->
+
+                <div class="flex w-full justify-between lg:order-3 lg:w-auto lg:justify-end lg:pt-8">
+                    <div class="lg:hidden">
+                        <h1 class="text-4xl font-light">Лаборатория</h1>
+                        <div class="dotline mr-5 mt-2">
+                            <div class="c"></div>
+                            <div class="l"></div>
+                            <div class="c"></div>
+                        </div>
+                    </div>
+
+                    <div class="-mr-4 lg:relative lg:z-10">
+                        <a href="/pages/frezer.html">
+                            <!-- #region NAV-LINK-FREZER -->
+                            <svg
+                                class="group w-32 transition-all hover:-translate-x-[0.05rem] hover:-translate-y-[0.05rem]"
+                                version="1.1"
+                                viewBox="0 0 139 139"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <defs>
+                                    <path
+                                        id="svg-nav-link-base"
+                                        d="m60.84 15c3.849-6.667 13.47-6.667 17.32 0l42.87 74.25c3.849 6.667-0.963 15-8.661 15h-85.74c-7.698 0-12.51-8.333-8.66-15z"
+                                        class="cursor-pointer"
+                                    />
+                                </defs>
+                                <use href="#svg-nav-link-base" class="fill-zinc-800 group-hover:fill-zinc-800/95 group-hover:drop-shadow-[0_6px_4px_rgba(0,0,0,0.8)]" />
+                                <rect x="50" y="53" width="38" height="3" rx="1.5" class="cursor-pointer fill-[#F62221] group-hover:fill-red-500" />
+                                <text class="w-16 cursor-pointer fill-white font-light tracking-wider 2xl:text-xs" text-anchor="middle">
+                                    <tspan x="52%" y="53%">Фрезерный</tspan>
+                                    <tspan x="52%" dy="14%">центр</tspan>
+                                </text>
+                            </svg>
+                            <!-- #endregion -->
+                        </a>
+                    </div>
+                </div>
+
+                <!-- #region ADDRESS -->
+                <div class="w-full text-left lg:relative lg:z-10 lg:order-2 lg:-ml-7 lg:mr-8">
+                    <ul class="items-center whitespace-nowrap fill-zinc-300 text-xl lg:flex lg:text-base xl:text-xl 3xl:text-2xl">
+                        <li class="mb-3">
+                            <a href="tel:+7-916-263-49-11">
+                                <span class="mr-4 inline-block rounded-full bg-zinc-800 align-middle text-white/90 lg:mr-2 xl:mr-3">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1"
+                                        class="m-2 w-4 lg:m-1 lg:w-3 xl:m-2 xl:w-4"
+                                        title="phone"
+                                        role="img"
+                                    >
+                                        <path
+                                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                                        />
+                                    </svg>
+                                </span>
+                                +7 (916) 263-49-11
+                            </a>
+                        </li>
+
+                        <li class="mb-3 hidden w-full lg:inline">
+                            <div class="dotline ml-2 mr-3 xl:ml-5 xl:mr-9 2xl:ml-3 2xl:mr-6 3xl:ml-5 3xl:mr-10">
+                                <div class="c"></div>
+                                <div class="l"></div>
+                                <div class="c"></div>
+                            </div>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="mailto:btr-lab@mail.ru">
+                                <span class="mr-4 inline-block rounded-full bg-zinc-800 align-middle text-white/90 lg:mr-2 xl:mr-3">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1"
+                                        class="m-2 w-4 lg:m-1 lg:w-3 xl:m-2 xl:w-4"
+                                        title="email"
+                                        role="img"
+                                    >
+                                        <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                        <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                                    </svg>
+                                </span>
+                                btr-lab@mail.ru
+                            </a>
+                        </li>
+
+                        <li class="mb-3 hidden w-full lg:inline">
+                            <div class="dotline ml-2 mr-3 xl:ml-5 xl:mr-9 2xl:ml-3 2xl:mr-6 3xl:ml-5 3xl:mr-10">
+                                <div class="c"></div>
+                                <div class="l"></div>
+                                <div class="c"></div>
+                            </div>
+                        </li>
+
+                        <li class="mb-3">
+                            <span class="mr-4 inline-block rounded-full bg-zinc-800 align-middle text-white/90">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1"
+                                    class="m-2 w-4 lg:m-1 lg:w-3 xl:m-2 xl:w-4"
+                                    title="location"
+                                    role="img"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                            </span>
+                            г. Пушкино
+                        </li>
+                    </ul>
+                </div>
+                <!-- #endregion -->
+            </article>
+
             <!-- #endregion -->
-          </div>
+
+            <!-- #region ARTICLE INFO -->
+            <article class="info flex w-full flex-col justify-between lg:h-[560px]">
+                <div class="relative z-10 ml-3 p-7 pb-0 pt-16 text-[1.4rem] leading-7 lg:my-auto lg:pl-28">
+                    <ul class="mb-5 list-inside list-square marker:text-base">
+                        <li>Ортодонтия</li>
+                        <li>Съемное протезирование</li>
+                        <li>Безметалловые конструкции</li>
+                        <li>Металлокерамика на SLM-каркасах</li>
+                        <li>Работа на имплантах</li>
+                        <li>Цифровой протокол</li>
+                    </ul>
+                </div>
+
+                <nav
+                    class="nav flex max-w-full flex-col items-end justify-end overflow-clip p-7 text-xl lg:absolute lg:bottom-0 lg:right-0 lg:h-full lg:w-[625px] lg:pb-20 lg:pr-40 2xl:pr-16 2xl:text-sm"
+                >
+                    <!-- #region NAV-LINK-ZAKAZ -->
+                    <a class="relative z-10" href="/pages/order.html">
+                        <svg
+                            class="group z-10 mt-2 w-32 transition-all hover:-translate-x-[0.05rem] hover:-translate-y-[0.05rem] focus:outline-none"
+                            version="1.1"
+                            viewBox="0 0 139 139"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <use href="#svg-nav-link-base" class="fill-white drop-shadow-[0_6px_4px_rgba(0,0,0,0.2)] group-hover:drop-shadow-[0_6px_4px_rgba(0,0,0,0.4)]" />
+                            <text class="cursor-pointer fill-zinc-950 font-normal" text-anchor="middle">
+                                <tspan x="50%" y="48%">Заказ-</tspan>
+                                <tspan x="49%" dy="16%">наряд</tspan>
+                            </text>
+                        </svg>
+                        <!-- #endregion -->
+                    </a>
+
+                    <!-- #region NAV-LINK-PRICE -->
+                    <a class="relative z-10" href="/pages/price-list.html">
+                        <svg
+                            class="group z-10 -mt-10 mr-28 w-32 transition-all hover:-translate-x-[0.05rem] hover:-translate-y-[0.05rem]"
+                            version="1.1"
+                            viewBox="0 0 139 139"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <use href="#svg-nav-link-base" class="fill-white drop-shadow-[0_6px_4px_rgba(0,0,0,0.2)] group-hover:drop-shadow-[0_6px_4px_rgba(0,0,0,0.4)]" />
+                            <text class="cursor-pointer fill-zinc-950 font-normal" text-anchor="middle">
+                                <tspan x="50%" y="48%">Прайс-</tspan>
+                                <tspan x="49%" dy="16%">лист</tspan>
+                            </text>
+                        </svg>
+                    </a>
+                    <!-- #endregion -->
+
+                    <!-- #region NAV-LINK-CONTACT -->
+                    <a class="relative z-10" href="/pages/contacts.html">
+                        <svg
+                            class="group z-10 -mt-14 w-32 transition-all hover:-translate-x-[0.05rem] hover:-translate-y-[0.05rem]"
+                            version="1.1"
+                            viewBox="0 0 139 139"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <use href="#svg-nav-link-base" class="fill-white drop-shadow-[0_6px_4px_rgba(0,0,0,0.2)] group-hover:drop-shadow-[0_6px_4px_rgba(0,0,0,0.4)]" />
+                            <text class="cursor-pointer fill-zinc-950 font-normal" text-anchor="middle">
+                                <tspan x="50%" y="60%">Контакты</tspan>
+                            </text>
+                        </svg>
+                    </a>
+                    <!-- #endregion -->
+                </nav>
+            </article>
+            <!-- #endregion -->
+        </main>
+        <div class="bg-white">
+            <div id="map" class="h-[300px] w-full bg-gray-300/80 sm:h-[540px]"></div>
         </div>
+        <footer class="bg-white px-5 pb-12 pt-6">
+            <hr class="mb-6" />
 
-        <!-- #region ADDRESS -->
-        <div class="w-full text-left lg:order-2 lg:-ml-7 lg:mr-8 ">
-          <ul class="fill-zinc-300 text-xl lg:text-base xl:text-xl 3xl:text-2xl lg:flex items-center whitespace-nowrap">
-            <li class="mb-3">
-              <a href="tel:+7-916-263-49-11">
-                <span
-                  class="mr-4 lg:mr-2 xl:mr-3 align-middle inline-block rounded-full bg-zinc-800 text-white/90"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    stroke-width="1"
-                    class="m-2 w-4 lg:w-3 lg:m-1 xl:w-4 xl:m-2"
-                    title="phone"
-                    role="img"
-                  >
-                    <path
-                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                    />
-                  </svg>
-                </span>
-                +7 (916) 263-49-11
-              </a>
-            </li>
+            <ul class="flex flex-wrap gap-6 whitespace-nowrap fill-zinc-300 pb-6 min-[340px]:text-lg sm:text-xl xl:gap-14 2xl:text-2xl 3xl:text-3xl">
+                <li class="order-1 sm:order-none sm:mt-2">
+                    <p class="font-copy text-sm font-light text-black">2023 &copy; Бонвильский треугольник</p>
+                    <p class="font-copy text-xs font-extralight text-gray-400">Политика конфиденциальности</p>
+                </li>
 
-            <li class="hidden lg:inline w-full mb-3">
-              <div class="dotline ml-2 mr-3 xl:ml-5 xl:mr-9 2xl:ml-3 2xl:mr-6 3xl:ml-5 3xl:mr-10">
-                <div class="c"></div>
-                <div class="l"></div>
-                <div class="c"></div>
-              </div>
-            </li>
-
-            <li class="mb-3">
-              <a href="mailto:btr-lab@mail.ru">
-                <span
-                  class="mr-4 lg:mr-2 xl:mr-3 align-middle inline-block rounded-full bg-zinc-800 text-white/90"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    stroke-width="1"
-                    class="m-2 w-4 lg:w-3 lg:m-1 xl:w-4 xl:m-2"
-                    title="email"
-                    role="img"
-                  >
-                    <path
-                      d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
-                    />
-                    <path
-                      d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
-                    />
-                  </svg>
-                </span>
-                btr-lab@mail.ru
-              </a>
-            </li>
-
-            <li class="hidden lg:inline w-full mb-3">
-              <div class="dotline ml-2 mr-3 xl:ml-5 xl:mr-9 2xl:ml-3 2xl:mr-6 3xl:ml-5 3xl:mr-10">
-                <div class="c"></div>
-                <div class="l"></div>
-                <div class="c"></div>
-              </div>
-            </li>
-
-           <li class="mb-3">
-              <span
-                class="mr-4 align-middle  inline-block rounded-full bg-zinc-800  text-white/90"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  stroke-width="1"
-                  class="m-2 w-4 lg:w-3 lg:m-1 xl:w-4 xl:m-2"
-                  title="location"
-                  role="img"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
-              г. Пушкино
-            </li>
-          </ul>
-        </div>
-        <!-- #endregion -->
-      </article>
-
-      <!-- #endregion -->
-
-      <!-- #region ARTICLE INFO -->
-      <article class="info flex w-full flex-col justify-between">
-        <ul
-          class="ml-3 list-inside list-square p-7 pb-0 pt-16 text-[1.4rem] leading-7 marker:text-base"
-        >
-          <li>Ортодонтия</li>
-          <li>Съемное протезирование</li>
-          <li>Безметалловые конструкции</li>
-          <li>Металлокерамика на SLM-каркасах</li>
-          <li>Работа на имплантах</li>
-          <li>Цифровой протокол</li>
-        </ul>
-
-        <nav
-          class="flex max-w-full flex-col items-end justify-end overflow-clip p-7 text-xl"
-        >
-          <!-- #region NAV-LINK-ZAKAZ -->
-          <svg
-            class="group z-10 mt-2 w-32 transition-all hover:-translate-x-[0.05rem] hover:-translate-y-[0.05rem] focus:outline-none"
-            version="1.1"
-            viewBox="0 0 139 139"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use
-              href="#svg-nav-link-base"
-              class="fill-white drop-shadow-[0_6px_4px_rgba(0,0,0,0.2)] group-hover:drop-shadow-[0_6px_4px_rgba(0,0,0,0.4)]"
-            />
-            <text
-              class="cursor-pointer fill-zinc-950 font-normal"
-              text-anchor="middle"
-            >
-              <tspan x="50%" y="60%">Заказ-наряд</tspan>
-            </text>
-          </svg>
-          <!-- #endregion -->
-          <!-- #region NAV-LINK-PRICE -->
-          <svg
-            class="group z-10 -mt-10 mr-28 w-32 transition-all hover:-translate-x-[0.05rem] hover:-translate-y-[0.05rem]"
-            version="1.1"
-            viewBox="0 0 139 139"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use
-              href="#svg-nav-link-base"
-              class="fill-white drop-shadow-[0_6px_4px_rgba(0,0,0,0.2)] group-hover:drop-shadow-[0_6px_4px_rgba(0,0,0,0.4)]"
-            />
-            <text
-              class="cursor-pointer fill-zinc-950 font-normal"
-              text-anchor="middle"
-            >
-              <tspan x="50%" y="60%">Прайс-лист</tspan>
-            </text>
-          </svg>
-          <!-- #endregion -->
-          <!-- #region NAV-LINK-CONTACT -->
-          <svg
-            class="group z-10 -mt-14 w-32 transition-all hover:-translate-x-[0.05rem] hover:-translate-y-[0.05rem]"
-            version="1.1"
-            viewBox="0 0 139 139"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use
-              href="#svg-nav-link-base"
-              class="fill-white drop-shadow-[0_6px_4px_rgba(0,0,0,0.2)] group-hover:drop-shadow-[0_6px_4px_rgba(0,0,0,0.4)]"
-            />
-            <text
-              class="cursor-pointer fill-zinc-950 font-normal"
-              text-anchor="middle"
-            >
-              <tspan x="50%" y="60%">Контакты</tspan>
-            </text>
-          </svg>
-          <!-- #endregion -->
-        </nav>
-      </article>
-      <!-- #endregion -->
-    </main>
-    <div class="bg-white">
-      <div  id="map" class=" bg-gray-300/80 w-full h-[300px] sm:h-[540px]"></div>
-    </div>
-<footer class="bg-white pt-6 px-5 pb-12">
-  <hr class="mx-3 mb-6">
-  
-    <ul class="fill-zinc-300  min-[340px]:text-lg sm:text-xl 2xl:text-2xl 3xl:text-3xl  flex pb-6 whitespace-nowrap gap-6 xl:gap-14">
-      <li class="mb-3">
-        <a href="tel:+7-916-263-49-11">
-          <span
-            class="mr-2 inline-block rounded-full bg-zinc-800 align-bottom text-white/90"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              stroke-width="1"
-              class="m-2 w-4 3xl:w-6"
-              title="phone"
-              role="img"
-            >
-              <path
-                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-              />
-            </svg>
-          </span>
-          +7 (916) 263-49-11
-        </a>
-      </li>
-      <li class="mb-3">
-        <a href="mailto:btr-lab@mail.ru">
-          <span
-            class="mr-4 inline-block rounded-full bg-zinc-800 align-bottom text-white/90"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              stroke-width="1"
-              class="m-2 w-4 3xl:w-6"
-              title="email"
-              role="img"
-            >
-              <path
-                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
-              />
-              <path
-                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
-              />
-            </svg>
-          </span>
-          btr-lab@mail.ru
-        </a>
-      </li>
-    </ul>
-    <p class="font-light text-sm text-black font-copy">2023 &copy; Бонвильский треугольник</p>
-    <p class="font-extralight text-xs text-gray-400 font-copy">Политика конфиденциальности</p>
-  </div>
-</footer>
-  </body>
+                <li>
+                    <a href="tel:+7-916-263-49-11">
+                        <span class="mr-2 inline-block rounded-full bg-zinc-800 align-bottom text-white/90">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1" class="m-2 w-4 3xl:w-6" title="phone" role="img">
+                                <path
+                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                                />
+                            </svg>
+                        </span>
+                        +7 (916) 263-49-11
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:btr-lab@mail.ru">
+                        <span class="mr-4 inline-block rounded-full bg-zinc-800 align-bottom text-white/90">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1" class="m-2 w-4 3xl:w-6" title="email" role="img">
+                                <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                            </svg>
+                        </span>
+                        btr-lab@mail.ru
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
 </html>
