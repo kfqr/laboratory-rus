@@ -39,8 +39,6 @@ export default defineConfig({
             input: {
                 main: resolve(root, "index.html"), // main page
                 frezer: resolve(root, "pages/frezer.html"), // first subpage
-                order: resolve(root, "pages/order.html"), // second subpage
-                "price-list": resolve(root, "pages/price-list.html"), // third subpage
             },
         },
     },

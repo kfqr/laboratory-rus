@@ -61,13 +61,18 @@
     }
 
     .user-icon {
-        mask: url("/assets/user.svg") no-repeat center;
+        mask: url("/assets/images/user.svg") no-repeat center;
         @apply h-[19px];
     }
 
     .email-icon {
-        mask: url("/assets/email.svg") no-repeat;
+        mask: url("/assets/images/email.svg") no-repeat;
         @apply h-[18px];
+    }
+
+    .close-icon {
+        mask: url("/assets/images/close.svg") no-repeat;
+        @apply block h-4 w-4 bg-black;
     }
 
     .text-required {
@@ -84,13 +89,21 @@
 
     @keyframes fadeInAnimation {
         from {
-           opacity: 0;
+            opacity: 0;
         }
         to {
             opacity: 1;
         }
     }
 
+    @keyframes show {
+        from {
+            transform: translateY(-10px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
 }
 
 @layer base {
@@ -98,13 +111,28 @@
         animation: fadeInAnimation ease-in-out 800ms;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    dialog {
+        background: transparent;
+        appearance: none;
+    }
+
+    dialog[open] {
+        animation: show 0.5s;
+    }
+
+    dialog[open]::backdrop {
+        animation: fadeInAnimation 0.5s;
+        background: rgba(0, 0, 0, 0.5);
     }
 
     @font-face {
         font-family: "ristretto";
         src:
-            url("/assets/ristretto_pro_bold.woff2") format("woff2"),
-            url("/assets/ristretto_pro_bold.woff") format("woff");
+            url("/assets/fonts/ristretto_pro_bold.woff2") format("woff2"),
+            url("/assets/fonts/ristretto_pro_bold.woff") format("woff");
         font-weight: 700;
         font-style: normal;
     }
@@ -112,8 +140,8 @@
     @font-face {
         font-family: "ristretto";
         src:
-            url("/assets/ristretto_pro.woff2") format("woff2"),
-            url("/assets/ristretto_pro.woff") format("woff");
+            url("/assets/fonts/ristretto_pro.woff2") format("woff2"),
+            url("/assets/fonts/ristretto_pro.woff") format("woff");
         font-weight: 400;
         font-style: normal;
     }
@@ -121,8 +149,8 @@
     @font-face {
         font-family: "ristretto";
         src:
-            url("/assets/ristretto_pro_light.woff2") format("woff2"),
-            url("/assets/ristretto_pro_light.woff") format("woff");
+            url("/assets/fonts/ristretto_pro_light.woff2") format("woff2"),
+            url("/assets/fonts/ristretto_pro_light.woff") format("woff");
         font-weight: 300;
         font-style: normal;
     }
@@ -133,23 +161,23 @@
             background-position: bottom right 45%;
             background-repeat: no-repeat;
             background-size: cover;
-            background-image: url("/assets/back_hd.jpg");
+            background-image: url("/assets/images/back_hd.jpg");
         }
 
         .about-black {
-            background: url("/assets/back_black_mobile.jpg") no-repeat left bottom / cover;
+            background: url("/assets/images/back_black_mobile.jpg") no-repeat left bottom / cover;
         }
 
         main article.info {
             background-color: #fff;
-            background-position: bottom 20px right 45%;
+            background-position: bottom right 45%;
             background-repeat: no-repeat;
             background-size: cover;
-            background-image: url("/assets/back_2_hd.jpg");
+            background-image: url("/assets/images/back_2_hd.jpg");
         }
 
         .info-black {
-            background: url("/assets/back_2_black_mobile.jpg") no-repeat left top / cover;
+            background: url("/assets/images/back_2_black_mobile.jpg") no-repeat left top / cover;
         }
 
         .nav,
@@ -157,12 +185,11 @@
             background-position: right bottom;
             background-repeat: no-repeat;
             background-size: contain;
-            background-image: url("/assets/diz_hd.png");
+            background-image: url("/assets/images/diz_hd.png");
         }
 
         .nav-black {
-            /* background-image: url("/assets/diz_black_sm.png"); */
-            background-image: url("/assets/diz_black_big.png");
+            background-image: url("/assets/images/diz_black_big.png");
         }
     }
 
@@ -176,37 +203,37 @@
         }
 
         .about-black {
-            background-image: url("/assets/back_black_hd.jpg");
+            background-image: url("/assets/images/back_black_hd.jpg");
         }
 
         .info-black {
-            background-image: url("/assets/back_2_black_hd.jpg");
+            background-image: url("/assets/images/back_2_black_hd.jpg");
         }
 
         .price {
-            background-image: url("/assets/price.png");
+            background-image: url("/assets/images/price.png");
         }
 
         .menu {
-            background-image: url("/assets/menu.png");
+            background-image: url("/assets/images/menu.png");
         }
 
         .nav-black {
-            background-image: url("/assets/diz_black_big.png");
+            background-image: url("/assets/images/diz_black_big.png");
         }
     }
 
     @media only screen and (min-resolution: 2dppx) and (min-width: theme("screens.lg")), only screen and (min-width: theme("screens.xl")) {
         main article.about,
         .about-bg-black {
-            background-image: url("/assets/back_fd.jpg");
+            background-image: url("/assets/images/back_fd.jpg");
         }
     }
 
     @media only screen and (min-resolution: 2dppx) and (min-width: theme("screens.2xl")), only screen and (min-width: theme("screens.3xl")) {
         main article.about,
         .about-bg-black {
-            background-image: url("/assets/back_4k.jpg");
+            background-image: url("/assets/images/back_4k.jpg");
         }
     }
 }
