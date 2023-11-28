@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
 export default {
-    content: ["./src/pages/*.html", "./src/index.html", "./src/public/assets/map.js"],
+    content: ["./src/frezer.html", "./src/index.html", "./src/js/*.js"],
     theme: {
         listStyleType: {
             none: "none",
@@ -34,6 +34,6 @@ export default {
             },
         },
     },
-    safelist: ["ya-gray-pane"],
+    safelist: ["ya-gray-pane", "text-center", "block", "text-gray-400", "mx-auto", "font-sans", "text-base", "ml-[18px]"],
     plugins: [],
 };

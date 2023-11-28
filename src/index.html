@@ -13,10 +13,9 @@
         <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-        <script defer src="/assets/js/modal.js"></script>
-
-        <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e22d7c09-ff6c-4417-a684-5bd8ef956fc0" type="text/javascript"></script> -->
-        <!-- <script src="/assets/js/map.js"></script> -->
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e22d7c09-ff6c-4417-a684-5bd8ef956fc0" type="text/javascript"></script>
+        <script src="./js/map.js" type="module"></script>
+        <script defer src="./js/modal.js" type="module"></script>
     </head>
     <body class="min-w-[320px] overflow-x-hidden bg-gradient-to-b from-slate-50 to-gray-400">
         <main class="relative">
@@ -39,7 +38,7 @@
                     </div>
 
                     <div class="-mr-4 lg:relative lg:z-10">
-                        <a href="/pages/frezer.html">
+                        <a href="/фрезерный-центр">
                             <!-- #region NAV-LINK-FREZER -->
                             <svg
                                 class="group w-32 transition-all hover:-translate-x-[0.05rem] hover:-translate-y-[0.05rem]"
@@ -260,26 +259,26 @@
         </footer>
 
         <dialog class="js-modal shadow-2xl" id="order">
-            <div class="relative min-w-[250px] p-8 pt-10 bg-white/70 backdrop-blur">
+            <div class="relative min-w-[250px] rounded-sm bg-white/70 p-8 pt-10 backdrop-blur">
                 <button class="js-close absolute right-3 top-3 rounded-md p-1 transition hover:bg-slate-400/20">
                     <i class="close-icon"></i>
                 </button>
 
                 <h2 class="mb-5 text-4xl sm:text-4xl">Заказ-наряд</h2>
 
-                <a class="btn m-auto" href="/assets/order.pdf" download>Скачать Заказ-наряд</a>
+                <a class="btn m-auto" href="/docs/order.pdf" download>Скачать Заказ-наряд</a>
             </div>
         </dialog>
 
         <dialog class="js-modal shadow-2xl" id="price">
-            <div class="relative min-w-[250px] p-8 pt-10 bg-white/70 backdrop-blur">
+            <div class="relative min-w-[250px] rounded-sm bg-white/70 p-8 pt-10 backdrop-blur">
                 <button class="js-close absolute right-3 top-3 rounded-md p-1 transition duration-200 hover:bg-slate-400/20">
                     <i class="close-icon"></i>
                 </button>
 
                 <h2 class="mb-5 text-4xl sm:text-4xl">Прайс-лист</h2>
 
-                <form class="mb-7 grid gap-4 text-lg text-[#7B7B7B] lg:grid-cols-2 lg:text-xl" action="">
+                <form class="mb-7 grid gap-4 text-lg text-[#7B7B7B] lg:grid-cols-2 lg:text-xl">
                     <label class="relative">
                         <i class="user-icon absolute bottom-0 left-7 top-0 my-auto"></i>
                         <input class="peer h-14 w-full rounded-lg bg-[#F5F5F5] pl-16 pr-3" type="text" name="name" required autofocus placeholder="" />
@@ -303,25 +302,25 @@
                     </label>
 
                     <div class="flex justify-center lg:col-span-2">
-                        <button class="btn mt-3 lg:mx-14" type="submit">Отправить</button>
+                        <button class="btn mt-3 lg:mx-14" type="button">Отправить</button>
                     </div>
                 </form>
 
                 <p class="text-xs text-[#7B7B7B] [text-wrap:pretty]">
                     * Отправляя персональные данные из данной формы, я подтверждаю свое согласие на обработку персональных данных и соглашаюсь на
-                    <a class="underline" href="/pact">политику конфиденциальности</a>
+                    <a class="underline">политику конфиденциальности</a>
                 </p>
             </div>
         </dialog>
 
         <dialog class="js-modal shadow-2xl" id="contacts">
-            <div class="relative min-w-[250px] p-8 pt-10 bg-white/70 backdrop-blur">
+            <div class="relative min-w-[250px] rounded-sm bg-white/70 p-8 pt-10 backdrop-blur min-[340px]:text-lg">
                 <button class="js-close absolute right-3 top-3 rounded-md p-1 transition hover:bg-slate-400/20">
                     <i class="close-icon"></i>
                 </button>
                 <h2 class="mb-5 text-4xl sm:text-4xl">Контакты</h2>
-
-                <div class="flex flex-wrap gap-4">
+                <p class="mb-3 sm:text-xl">Пушкино , микрорайон Серебрянка , д.48, корпус 2</p>
+                <div class="flex flex-wrap gap-4 sm:text-xl">
                     <a href="tel:+7-916-263-49-11">
                         <span class="mr-2 inline-block rounded-full bg-zinc-800 align-bottom text-white/90">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1" class="m-2 w-4 fill-current 3xl:w-6" title="phone" role="img">
